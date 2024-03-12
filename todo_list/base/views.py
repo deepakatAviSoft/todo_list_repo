@@ -12,6 +12,7 @@ class TaskList(ListView):
 class TaskDetail(DetailView):
     model = Task 
     context_object_name = 'task' #by using this we can change {{object}} name to {{task}} in html file
+    template_name = 'base/task.html' #cause the name of html file is different 
 
 
 

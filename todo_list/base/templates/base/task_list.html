@@ -5,9 +5,11 @@
         <th>Item</th>
     </tr>
     {% for task in tasks %}  
+    <!--I have changed object_list to tasks cuase its more readble-->
     <tr>
         <td>
             {{task.title}}
+            <td><a href = '{% url 'task' task.id %}'>View</a></td>
         </td>
     </tr>
     {% empty %}
